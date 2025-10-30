@@ -1,15 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Welcome to this page">
+    <meta name="Description"
+        content="WDD 131 – Dynamic Web Fundamentals, wriiten by Kevin Mbemba Kiyindou. This is a course landing page">
+    <meta name="Author" content="Kevin Mbemba Kiyindou">
+    <title>WDD 131 – Dynamic Web Fundamentals – Kevin Mbemba Kiyindou</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>WDD131</h1>
-    <p>Welcome</p>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <div class="nav-container">
+            <nav>
+                <a href="https://www.linkedin.com/in/summer-soldiertm-4a49502b6">linkedIn</a>
+                <a href="https://byupw.instructure.com/">Canvas</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/gal/5?lang=eng">Scripture</a>
+                <a href="#">Final project</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <h1>Kevin Mbemba Kiyindou</h1>
+
+        <div class="card-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="./images/me.jpg" alt="">
+                <p>My name is Kevin Mbemba Kiyindou and I go by Kofi.
+                    I was born in South Africa and raised by my family
+                    from Congo Brazzaville. I am currently unemployed and
+                    pursuing my studies. I love to play videogames and
+                    and also Web and Computer programming is fun. I am
+                    also a curious learner who loves to test things and
+                    understand why they work.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>Brazzaville, Congo</h2>
+                <img src="./images/congo-flag.webp" alt="The Congo-Brazzaville flag">
+                <p>Congo is also know as Congo-Brazzaville, it is located in Central
+                    africa with many rainforests and its rich in minerals like oil
+                    and diamonds, soccer is also the most preffered sports. There is
+                    also a variety of culture</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer-container">
+        <!-- Put your Name and state or country -->
+        <p>&copy; | <span id="currentyear"></span> | Kevin Mbemba Kiyindou | South Africa</p>
+
+        <!-- Use javascript to get the last modified date -->
+        <p id="lastModified"></p>
+
+    </footer>
 </body>
 
 </html>

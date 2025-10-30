@@ -1,0 +1,158 @@
+/* Initialize variables */
+:root {
+    --heading-font: "Roboto Condensed",
+        sans-serif;
+    /*Heading font*/
+
+    --background-color1: #0A0F29;
+    /*Page background color*/
+    /* background color 2 */
+    --background-color2: rgb(85, 83, 83);
+    --bg-height: 90px;
+    --body-font: sans-serif;
+    /*text color*/
+    --text-color: #FFFFFF;
+    --cards-background: #FFFDD0;
+    /* Bg color for the section*/
+    --nav-link-col: #39FF14;
+    /* Use for headings, button or hover effects*/
+    --heading-size: 30px;
+    --navig-bg-size: 60px;
+    /* h1 background color*/
+    --h1-bg-col: rgb(31, 45, 85);
+
+    --card-color: rgb(219, 219, 151);
+}
+
+#course-title {
+    display: block;
+    background-color: var(--background-color1);
+    color: var(--text-color);
+    height: var(--bg-height);
+    text-align: center;
+    font-size: var(--heading-size);
+    font-family: var(--heading-font);
+}
+
+.nav-container>nav,
+.nav-container>nav>a {
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    gap: var(--bg-height);
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+.nav-container>nav>a:hover {
+    border-radius: 8px;
+    color: var(--nav-link-col);
+    transition: all 0.3s ease;
+    text-decoration: overline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    padding-top: 30px;
+    height: 900px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    background-color: var(--background-color2);
+    height: var(--navig-bg-size);
+    padding-top: var(--heading-size);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+main>h1 {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--h1-bg-col);
+    color: var(--text-color);
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding-left: 10px;
+    font-family: var(--heading-font);
+}
+
+.card-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    gap: 18px;
+
+}
+
+.card:nth-of-type(1) {
+    max-height: 450px;
+    background-color: var(--cards-background);
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.card:nth-of-type(2) {
+    max-height: 500px;
+    background-color: var(--cards-background);
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+
+.card>img {
+    width: 160px;
+}
+
+.card:nth-of-type(1)>h2,
+.card:nth-of-type(2)>h2 {
+    text-align: center;
+    background-color: var(--background-color1);
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-family: var(--heading-font);
+}
+
+.card>img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.card>p {
+    text-align: center;
+    font-family: var(--body-font);
+}
+
+.card:nth-of-type(2)>p {
+    padding-top: 20px;
+    font-size: auto;
+
+}
+
+.footer-container {
+    background-color: var(--background-color1);
+    height: var(--bg-height);
+    color: #FFFFFF;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-family: var(--body-font);
+}
+
+#currentyear,
+#lastModified {
+    color: yellow;
+}
