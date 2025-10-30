@@ -150,6 +150,8 @@ main>h1 {
     border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
     font-family: var(--body-font);
+    padding-top: 20px;
+    margin-top: 40px;
 }
 
 #currentyear,
