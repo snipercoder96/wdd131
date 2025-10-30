@@ -152,6 +152,7 @@ main>h1 {
     font-family: var(--body-font);
     padding-top: 20px;
     margin-top: 40px;
+    /* Ensure there is spacing*/
 }
 
 #currentyear,
