@@ -46,6 +46,10 @@
     font-family: var(--body-font);
 }
 
+.header {
+    opacity: 100%;
+}
+
 .nav-container>nav>a:hover {
     border-radius: 8px;
     color: var(--nav-link-col);
@@ -138,11 +142,9 @@ main>h1 {
 
 .card:nth-of-type(2)>p {
     padding-top: 20px;
-    font-size: auto;
-
 }
 
-.footer-container {
+footer {
     background-color: var(--background-color1);
     height: var(--bg-height);
     color: #FFFFFF;
