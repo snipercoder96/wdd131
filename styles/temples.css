@@ -1,6 +1,6 @@
 :root {
     --fonts-for-text: 'Roboto', sans-serif;
-    --bg-color: rgb(41, 2, 50);
+    --bg-color: rgb(76, 165, 255);
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 header>.title {
     color: #fff;
     padding-left: 2px;
-    font-family: var(--fonts-for-text);
+    font-family: 'Roboto';
     margin: 0;
 }
 
@@ -27,7 +27,7 @@ header>nav {
 }
 
 header>nav>a {
-    color: limegreen;
+    color: black;
 }
 
 footer {
@@ -56,7 +56,7 @@ main>.grid {
 
 main>h1 {
     text-align: center;
-    font-family: var(--fonts-for-text);
+    font-family: 'Roboto';
 }
 
 .grid>figure>img {
@@ -70,7 +70,7 @@ figure>figcaption {
 }
 
 nav a:hover {
-    color: rgb(11, 255, 137);
+    color: red;
 
 }
 
