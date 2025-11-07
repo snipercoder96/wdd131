@@ -1,0 +1,64 @@
+.navbar {
+    background-color: aqua;
+    padding-bottom: 30px;
+    padding-top: 30px ;
+    border-radius: 8px;
+}
+
+/* Desktop view */
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+    
+}
+
+.menu-toggle{
+    display: none;
+}
+
+/* Mobile view*/
+
+@media screen and (max-width: 768px){
+
+    /* Hide in the background color*/
+    .navbar{
+        background: none;
+    }
+
+
+    /* button show */
+    .menu-toggle{
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        font-size: 2rem;
+        background-color: rgb(74, 240, 255);
+        border: none;
+        cursor: pointer; /* This changes to a hand icon*/
+
+    }
+
+    /* Closed link*/
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            background-color: aqua;
+            position: absolute;
+            top: 3rem;
+            left: 1rem;
+            padding: 1rem;
+        }
+
+    /* Open links when toggled */
+    .nav-links.open{
+        display: flex;
+        border-radius: 8px;
+    }
+
+
+
+    
+}
