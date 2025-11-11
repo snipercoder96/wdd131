@@ -54,6 +54,12 @@
         position: static;
     }
 
+    .info-johannesburg::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
     .data {
         position: static;
         display: flex;
@@ -95,11 +101,11 @@
         font-family: var(--para-fnt);
     }
 
-    .weather > h2 > img {
+    .weather>h2>img {
         display: none;
     }
 
-    .weather > p {
+    .weather>p {
         color: var(--h1-col);
     }
 
