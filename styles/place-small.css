@@ -1,0 +1,133 @@
+/**/
+
+:root {
+    --header-and-footer: rgba(202, 31, 31, 0.662);
+    --bckgrnd-col: rgb(255, 255, 255, 0.5);
+    --mobile-grey: rgb(64, 64, 64);
+    --h2-col: rgb(149, 0, 255, 0.8);
+    --footer-txt-col: rgb(128, 255, 0);
+    --heading-fnt: "Roboto Condensed", sans-serif;
+    --para-fnt: helvetica;
+    --heading-col: blue;
+    --h1-col: #fff;
+    --para-col: #000;
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 1000px) {
+
+    body {
+        width: 100%;
+        height: auto;
+        background-color: black;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: var(--heading-fnt);
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: var(--h1-col);
+    }
+
+    .heading {
+        background-color: var(--header-and-footer);
+        padding: 10px 0 10px 0;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero>picture>img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .hero {
+        position: static;
+        display: block;
+    }
+
+    .info-johannesburg {
+        position: static;
+    }
+
+    .data {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--mobile-grey);
+        opacity: 1;
+        padding: 0 0 1em 0;
+        text-align: center;
+        border-radius: 8px;
+        margin: 10px 0 0 0;
+    }
+
+    .data>h2 {
+        position: relative;
+        background-color: var(--h2-col);
+        padding: 1.5em 0 0 0;
+        font-family: var(--heading-fnt);
+        border-radius: 8px 0 0 8px;
+        margin: 0 0 10px 0;
+        color: var(--h1-col);
+        font-weight: 300;
+    }
+
+    .data>p {
+        font-family: var(--para-fnt);
+        color: var(--h1-col);
+
+    }
+
+    .weather {
+        position: static;
+        background-color: var(--mobile-grey);
+        padding: 0 0 1em 0;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        padding-top: 0;
+        font-family: var(--para-fnt);
+    }
+
+    .weather > h2 > img {
+        display: none;
+    }
+
+    .weather > p {
+        color: var(--h1-col);
+    }
+
+    .weather>h2 {
+        position: relative;
+        background-color: var(--h2-col);
+        padding: 1.5em 0 0 0;
+        border-radius: 8px 0 0 8px;
+        color: var(--h1-col);
+        margin: 0 0 10px 0;
+        display: block;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    footer {
+
+        margin: 20px 0 0 0;
+        background-color: var(--header-and-footer);
+        padding: 20px 0 20px 0;
+        text-align: center;
+        color: var(--h1-col);
+        font-family: var(--para-fnt);
+    }
+
+    #currentyear,
+    #lastModified {
+        color: var(--footer-txt-col);
+    }
+
+}
