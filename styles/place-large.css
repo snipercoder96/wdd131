@@ -69,7 +69,7 @@
 
     }
 
-    .weather > h2 {
+    .weather>h2 {
         display: flex;
         flex-direction: row;
     }
@@ -95,5 +95,13 @@
     #currentyear,
     #lastModified {
         color: var(--footer-txt-col);
+    }
+
+    h2>.icon-small {
+        display: none;
+    }
+
+    h2>.emoticon {
+        display: inline;
     }
 }

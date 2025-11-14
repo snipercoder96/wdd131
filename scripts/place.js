@@ -9,29 +9,32 @@ document.getElementById("lastModified").textContent = lastModified;
 
 
 /* Weather for Javascript */
+document.addEventListener("DOMContentLoaded", () => {
+    const temp = 23;   // temperature in °C
+    const wind = 20;   // wind speed in km/h
 
-const temperature = 20;
-const windSpeed = 12;
+    const temperature = document.getElementById("temp");
+    const windSpeed = document.getElementById("wind");
+    const windchill = document.getElementById("windchill");
 
-function calculateWindChill(temp, speed) {
-    return 13.12 + 0.6215 * temp - 11.37 * Math.pow(speed, 0.16) + 0.3965 * temp * Math.pow(speed, 0.16);
-}
+    if (temperature) temperature.textContent = `${temp} °C`;
+    if (windSpeed) windSpeed.textContent = `${wind} km/h`;
 
-document.addEventListener("DOMContentLoaded", (temp, speed) =>{
-    let windChill = "N/A";
-
-    if (temperature <= 20 && windSpeed >= 12)
-    {
-        windChill = calculateWindChill(temperature, windSpeed).toFixed(1);
-            //shows in 1 decimal places
-        
-    } else {
-        windChill = "N/A";
+    function calculateWindChill(temp, speed) {
+        return (
+            13.12 +
+            0.6215 * temp -
+            11.37 * Math.pow(speed, 0.16) +
+            0.3965 * temp * Math.pow(speed, 0.16)
+        );
     }
 
-    // Get id and assign it to windchill value
-    document.getElementById("windchill").textContent = windChill;
-
-    document.getElementById("temp").innerHTML = temperature;
-    document.getElementById("wind").innerHTML = windSpeed;
-})
+    // Apply conditions
+    if (temp <= 10 && wind > 4.8) {
+        const wc = calculateWindChill(temp, wind).toFixed(1);
+        if (windchill) windchill.textContent = `${wc} °C`;
+    } else {
+        if (windchill) windchill.textContent = "N/A";
+    }
+});
+    

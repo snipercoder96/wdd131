@@ -101,9 +101,6 @@
         font-family: var(--para-fnt);
     }
 
-    .weather>h2>img {
-        display: none;
-    }
 
     .weather>p {
         color: var(--h1-col);
@@ -136,4 +133,11 @@
         color: var(--footer-txt-col);
     }
 
+    h2 > .icon-small {
+        display: inline;
+    }
+
+    h2 > .emoticon {
+        display: none;
+    }
 }
