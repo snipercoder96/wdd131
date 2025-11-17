@@ -1,0 +1,27 @@
+table, th, td {
+  border: 1px solid rgb(0, 0, 0);  
+  border-collapse: collapse; 
+}
+
+th, td {
+  padding: 8px;              
+}
+
+thead > tr:nth-child(1) > th {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+
+thead > tr:nth-child(2) > .blank {
+    background-color: black;
+}
+
+thead > tr:nth-child(2) > th {
+    background-color: rgb(60, 60, 60);
+    color: #fff;
+}
+
+tbody > tr:nth-child(2) > td {
+    background-color: rgb(199, 194, 194);
+}
