@@ -57,7 +57,7 @@
         align-items: center;
     }
 
-    main >.grid {
+    main>.grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -74,11 +74,11 @@
         justify-content: center;
     }
 
-    header > nav > a{
+    header>nav>a {
         color: #000000;
     }
 
-    header > nav a:visited {
+    header>nav a:visited {
         color: purple;
     }
 
@@ -103,8 +103,8 @@
 
     }
 
-    .temple-card > h2,
-    .temple-card > p {
+    .temple-card>h2,
+    .temple-card>p {
         text-align: center;
         margin: auto auto 20px 10px;
     }
@@ -117,7 +117,7 @@
         color: rgb(24, 24, 115);
     }
 
-    .temple-card > p {
+    .temple-card>p {
         font-family: sans-serif;
     }
 
