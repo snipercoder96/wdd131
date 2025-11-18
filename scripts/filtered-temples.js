@@ -234,7 +234,7 @@ const displayMenu = document.querySelector("nav");
 menuOpen.addEventListener("click", function () {
     displayMenu.classList.toggle("open");
 
-    if (window.innerWidth < 999) {
+    if (window.innerWidth <= 999) {
         if (displayMenu.classList.contains("open")) {   // if doesn't exist add the class
             menuOpen.textContent = "X";
 
