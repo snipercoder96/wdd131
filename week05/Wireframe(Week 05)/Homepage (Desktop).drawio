@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.1.0">
+  <diagram name="Page-1" id="nyyxLc8PExDIX4ucqhs0">
+    <mxGraphModel dx="648" dy="666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="580" width="560" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="" vertex="1">
+          <mxGeometry height="70" width="560" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#2D7600;fillColor=#60a917;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="Icon" vertex="1">
+          <mxGeometry height="30" width="60" x="70" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="Nav links (4)" vertex="1">
+          <mxGeometry height="40" width="310" x="250" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;opacity=50;" value="Hero Iimage" vertex="1">
+          <mxGeometry height="250" width="560" x="50" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Headline &quot;Welcome to my site&quot;" vertex="1">
+          <mxGeometry height="30" width="60" x="300" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#2D7600;fillColor=#60a917;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="Subheading &quot;Sharing tips and projects" vertex="1">
+          <mxGeometry height="30" width="140" x="260" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Intro text" vertex="1">
+          <mxGeometry height="30" width="110" x="70" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Call to action button" vertex="1">
+          <mxGeometry height="40" width="120" x="190" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Call to action button" vertex="1">
+          <mxGeometry height="40" width="120" x="360" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="100" width="360" x="160" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="CTA Message" vertex="1">
+          <mxGeometry height="30" width="100" x="280" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="Full witdth (Article/ Section)" vertex="1">
+          <mxGeometry height="100" width="560" x="50" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Tip of the day" vertex="1">
+          <mxGeometry height="30" width="110" x="60" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Footer (Have social links and references -&amp;gt; cited sources)" vertex="1">
+          <mxGeometry height="80" width="560" x="50" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-21" edge="1" parent="1" source="VA4_JQ2n1g4p6xqTsCXB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="VA4_JQ2n1g4p6xqTsCXB-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sources to learning material (to the right)" vertex="1">
+          <mxGeometry height="50" width="160" x="420" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Featured posts" vertex="1">
+          <mxGeometry height="30" width="115" x="75" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="VA4_JQ2n1g4p6xqTsCXB-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#ffffff;strokeColor=#001DBC;" value="Main" vertex="1">
+          <mxGeometry height="80" width="560" x="50" y="370" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
