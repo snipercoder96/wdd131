@@ -103,3 +103,13 @@ function handleSubmit(event) {
 }
 
 document.querySelector(".form1").addEventListener("submit", handleSubmit);
+
+
+const currentYear = document.getElementById("currentYear");
+const lastModified = document.getElementById("lastModified");
+
+const year = new Date().getFullYear();
+const modified = new Date().toLocaleString();
+
+currentYear.textContent = year;
+lastModified.textContent = modified;

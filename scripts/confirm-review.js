@@ -30,3 +30,13 @@ window.addEventListener("DOMContentLoaded", () => {
         document.getElementById("reviewCount").textContent = reviewCount;
     }
 });
+
+
+const currentYear = document.querySelector('#currentYear');
+const lastModified = document.querySelector('#lastModified');
+
+const year = new Date().getFullYear();
+const modified = new Date().toLocaleString();
+
+currentYear.textContent = year;
+lastModified.textContent = modified;

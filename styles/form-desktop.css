@@ -1,15 +1,4 @@
-:root {
-    --body-color: #111827;
-    --form-label-color: #1E3A8A;
-    --button-hover-background-color-start: #107ba9;
-    --button-hover-background-color-end: #38BDF8;
-    --button-color: white;
-    --button-background-color-start: #1E3A8A;
-    --button-background-color-end: #2b56cc;
-    --form-background-color: #e9e9ea;
-    --h1-background-color-start: rgb(9, 5, 126);
-    --h1-background-color-end: rgb(1, 107, 193);
-}
+
 
 @media screen and (min-width:1000px) {
     header {
