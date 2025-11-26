@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Mbemba Kiyindou">
+    <meta name="description" content="This webpage invites users globally to rate the product.">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form-mobile.css"> <!--mobile first-->
+    <link rel="stylesheet" href="styles/form-desktop.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+
+        <!-- FORM -->
+        <form method="get" action="review.html" class="form1">
+            <fieldset>
+                <!-- Product -->
+                <label for="product">Product Name<span class="asterick">*</span><span
+                        class="required">(required)</span></label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected hidden>Select a Product...</option>
+                    <!-- Dynamic options go here✅ -->
+                </select>
+
+                <!-- Rating -->
+                <p>Overall Rating</p>
+                <div class="rating-group">
+                    <div class="rating-radio">
+                        <label for="rating1">☆</label>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </div>
+
+                    <div class="rating-radio">
+                        <label for="rating2">☆☆</label>
+                        <input type="radio" id="rating2" name="rating" value="2">
+                    </div>
+
+                    <div class="rating-radio">
+                        <label for="rating3">☆☆☆</label>
+                        <input type="radio" id="rating3" name="rating" value="3">
+                    </div>
+
+                    <div class="rating-radio">
+                        <label for="rating4">☆☆☆☆</label>
+                        <input type="radio" id="rating4" name="rating" value="4">
+                    </div>
+
+                    <div class="rating-radio">
+                        <label for="rating5">☆☆☆☆☆</label>
+                        <input type="radio" id="rating5" name="rating" value="5">
+                    </div>
+
+                </div>
+
+                <!-- Date -->
+                <label for="date">Installation Date<span class="asterick">*</span><span
+                        class="required">(required)</span></label>
+                <input type="date" id="date" name="date" required>
+
+                <!-- Features -->
+                <p>What features did you find useful (Check all that apply)</p>
+
+
+                <div class="checkbox-container">
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="feature1" name="features" value="durability">
+                        <label for="feature1">Durability</label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="feature2" name="features" value="ease of use">
+                        <label for="feature2">Ease Of Use</label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="feature3" name="features" value="performance">
+                        <label for="feature3">Performance</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="feature4" name="features" value="design">
+                        <label for="feature4">Design</label>
+                    </div>
+
+                </div>
+
+
+                <!-- Written Review -->
+                <div class="review-container">
+                    <label for="review">Written Review (optional)</label>
+                    <textarea id="review" name="review" rows="5" cols="40" placeholder="Write your thoughts here...">
+                    </textarea>
+                </div>
+
+
+
+                <!-- Username -->
+                <div class="username-container">
+                    <label for="username">Your Name</label>
+                    <input type="text" id="username" name="username">
+                </div>
+
+
+
+                <!-- Submit -->
+                <input type="submit" value="Submit Review" id="sub-btn">
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Kevin Mbemba Kiyindou | last Modified:<span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>

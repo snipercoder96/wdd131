@@ -1,0 +1,180 @@
+:root {
+    --body-color: #111827;
+    --form-label-color: #1E3A8A;
+    --button-hover-background-color-start: #38BDF8;
+    --button-hover-background-color-end: #38BDF8;
+    --button-color: white;
+    --button-background-color-start: #1E3A8A;
+    --button-background-color-end: #2b56cc;
+    --form-background-color: #e9e9ea;
+    --h1-background-color-start: rgb(9, 5, 126);
+    --h1-background-color-end: rgb(1, 107, 193);
+}
+
+@media screen and (max-width:999px) {
+    header {
+        text-align: center;
+        color: white;
+        background: radial-gradient(circle, var(--h1-background-color-start), var(--h1-background-color-end));
+        margin: 0 0 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;     
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        min-height: 100vh; 
+        background: radial-gradient(circle, #3339ea, #6166fe);    
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    form.form1 {
+        width: 90%;
+        max-width: 999px;
+        margin: 20px auto;
+        background-color: var(--form-background-color);
+        padding: 1rem;   
+    }
+
+
+    .form1 fieldset {
+        margin: 2rem 0;
+    }
+
+    .form1 select {
+        height: 44px;
+        width: 100%;
+    }
+
+    .rating-group {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-around;
+        margin: 0 0 30px;
+    }
+
+    .rating-radio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form1 input[type="date"] {
+        height: 44px;
+        width: 100%;
+    }
+
+    .form1 .checkbox-container {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin: 0 0 20px;
+    }
+
+    .form1 .checkbox-group {
+        display: flex;
+        gap: 6px;
+    }
+
+    input[type="checkbox"] {
+        accent-color: var(--form-label-color);
+    }
+
+    .review-container,
+    .username-container {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin: 0 0 30px;
+    }
+
+    input[type="text"] {
+        height: 44px;
+
+    }
+    input[type="submit"] {
+        width: 100%;
+        height: 44px;
+        background: linear-gradient(to right, var(--button-background-color-start), var(--button-background-color-end));
+        color: white;
+        border: 2px solid grey;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .form1 label[for="product"],
+    .form1 > fieldset p,
+    .form1 label[for="date"],
+    .form1 label[for="review"],
+    .form1 label[for="username"] {
+        color: var(--form-label-color);
+        font-size: medium;
+        font-family: sans-serif;
+    }
+
+    .form1 > fieldset > .checkbox-container label,
+    input[value="Submit Review"] {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    select[name="product"]:invalid:user-invalid,
+    input[name="date"]:invalid:user-invalid{
+        box-shadow: 0 0 5px red;
+        border: 3px solid red;
+    }
+
+    
+    select[name="product"]:focus,
+    input[name="date"]:focus {
+        outline: none;
+        border: 3px solid rgb(0, 255, 0);
+        box-shadow: 0 0 5px rgb(0, 255, 0);
+        
+    }
+
+    .asterick, label[for="date"] > .asterick{
+        color: #b00020;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .required, label[for="product"] > span[class="required"] {
+        color: #222;
+        font-size: 0.7em;
+        font-style: italic;
+    }
+
+    footer {
+        background: radial-gradient(circle, var(--h1-background-color-start), var(--h1-background-color-end));
+        width: 100%;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        color: #fff;     
+    }
+
+    h1,
+    footer {
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;     
+    }
+
+
+}

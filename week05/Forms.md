@@ -6,11 +6,6 @@
 - ARIA helps describe roles, states, and properties of elements that aren’t always clear from plain HTML.
 
 
-
-
-
-
-
 # 📝 Accessibility Guidance
 - Order matters: Don’t rearrange form controls with CSS; keep HTML order consistent for screen readers.
 
