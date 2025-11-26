@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Project Site Plan</h1>
+    </header>
+
+    <main>
+        <!--site name-->
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Name:</strong> HyperMarkup Mentor</p>
+            <p><strong>Description:</strong> I chose this name because I thought of HTML but used HyperMarkup (skipping Text)
+            then used mentor because i believe i am able to give some insights or tips</p>
+            <img src="images/icon.png" alt="Site Logo">
+        </section>
+
+        <!--site purpose-->
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The purpose of HyperMarkup Mentor is to guide beginners who are just starting their coding journey.
+            The site provides clear, beginner‑friendly tips on HTML, CSS, and JavaScript. 
+            People who visit this site will find practical advice, examples, and resources that help them understand how these
+            technologies work together to build web pages. The site also encourages confidence by breaking
+            down complex concepts into simple steps, making coding fun.</p>
+        </section>
+
+        <!-- scenarios -->
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>Im new to coding, how do I start learning HTML, CSS, and JavaScript</li>
+                <li>Where can I find projects to work on every day?</li>
+            </ul>
+        </section>
+
+        <!--color schema-->
+        <section>
+            <h2>Color Schema</h2>
+            <p>Primary Color: Primary Color:  Hex: #0d47a1, → h1 #333333
+            Usage: Headings, navigation bar, links → I love blue, but for the user it gives clarity</p>
+            <p>Secondary Color: Secondary Color: Soft Gray → Hex: #F5F5F5, #003366 → smaller h2 - h6 
+            
+            Usage: Backgrounds, cards, sections → prevents website from being unreadable</p>
+        </section>
+
+        <!-- typography -->
+        <section>
+            <h2>Typography</h2>
+            <p>Heading Font: Roboto</p>
+            <p>Body Font: sans-serif</p>
+        </section>
+
+        <!--wireframe-->
+        <section>
+            <h2>Wireframe</h2>
+            <p>Mobile View:</p>
+            <img src="images/Home Page (Mobile).drawio.png" alt="Mobile Wireframe"> <!--mobile-->
+            <p>Desktop View:</p>
+            <img src="images/Homepage (Desktop).drawio.png" alt="Desktop Wireframe">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Your Name | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>

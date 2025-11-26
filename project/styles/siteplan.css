@@ -1,0 +1,33 @@
+:root{
+    --font-heading: 'Roboto Condensed', sans-serif;
+    --font-body: 'Source Sans 3', sans-serif;
+
+    --font-color-heading-main: #0d47a1;
+    --font-color-heading-small: #003366;
+    --font-color-body: #333333;
+
+    --body-color: #F5F5F5;
+
+    /*card*/
+    --card-bg: #ffffff;
+    --card-border: #e0e0e0;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+h1{
+    font-family: var(--font-heading);
+    color: var(--font-color-heading-main);
+}
+
+section > h2 {
+    font-family: var(--font-heading);
+    color: var(--font-color-heading-small);
+}
+p{
+    font-family: var(--font-body);
+    color: var(--font-color-body);
+}
