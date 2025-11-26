@@ -60,7 +60,8 @@ function validateForm() {
         showError("product", "Please choose a product");
         isValid = false;
     }
-    if (rating.value === "" || rating.value === "default") {
+    const ratingChecked = document.querySelector('input[name="rating"]:checked'); // fixing reason the error doesnt pop up
+    if (!ratingChecked) {
         showError("rating1", "Please give a rating");
         isValid = false;
     }
@@ -81,9 +82,10 @@ function showError(fieldId, message) {
 }
 
 function saveReview() {
+    const ratingChecked = document.querySelector('input[name="rating"]:checked');
     const reviewData = {
         product: document.getElementById("product").value,
-        rating: document.getElementById("rating1").value,
+        rating: ratingChecked ? ratingChecked.value : "",
         date: document.getElementById("date").value,
         review: document.getElementById("review").value,
         name: document.getElementById("username").value
