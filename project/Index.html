@@ -12,11 +12,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
 
-    <!-- Css links -->
+    <!--CSS-->
     <link rel="stylesheet" href="styles/index-mobile.css">
     <link rel="stylesheet" href="styles/index-desktop.css">
+    <!--JAVASCRIPT-->
 
-    <title>Home page</title>
+    <title>Home page | HyperMarkup Mentor</title>
 </head>
 
 <body>
@@ -50,8 +51,8 @@
         <div class="cta">
             <section>
                 <p>Ready to level up your coding experience</p>
-                <button class="cta">Explore Tips</button>
-                <button class="cta">View Resources</button>
+                <button class="cta" id="tipsBtn">Tips</button>
+                <button class="cta" id="resourcesBtn">View Resources</button>
             </section>
         </div>
 
@@ -73,12 +74,12 @@
 
         <section>
             <h2>Tip of the day</h2> <!-- Uses Javascript -->
-            <p>Loading tip...<br><span id ="tipoftheday"></span></p>
+            <p>Loading tip...<br><span id ="tipOfTheDay"></span></p>
         </section>
     </main>
     <hr>
     <footer>
-        <p>&copy; <span id="currentyear"></span> | Kevin Mbemba Kiyindou | <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentYear"></span> | Kevin Mbemba Kiyindou | <span id="lastModified"></span></p>
     </footer>
     
 </body>

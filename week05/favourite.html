@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/favourite.js" defer></script>
+    
+    <style>
+        body{
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        label {
+            display: block;
+            font-family: 'Courier New', Courier, monospace;
+            color: blue;
+        }
+        button{
+            padding: 5px;
+            background: linear-gradient(rgb(134, 6, 6), red);
+            color: white;
+            border: 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <label for="color">Enter your favorite color:</label>
+    <input id="color" type="text">
+    <p id="output"></p>
+    <button id="saveBtn">Save Color</button>
+</body>
+</html>
+
+
+
+
+
+
+<!--Imagine you’re building a tiny app called “Favorite Hobby Tracker.”
+
+User Input
+
+The user types their hobby into a text field.
+
+This is where .value comes in — it represents what they typed.
+
+Event Handling
+
+As soon as they type, an event fires (input event).
+
+The app reacts by showing their hobby live on the page.
+
+Persistence with localStorage
+
+When they click “Save,” the hobby is stored in localStorage.
+
+If they refresh the page, the app retrieves the saved hobby and shows it again.-->
