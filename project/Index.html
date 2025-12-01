@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,33 +11,38 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="manifest" href="./images/site.webmanifest">
 
     <!--CSS-->
     <link rel="stylesheet" href="styles/index-mobile.css">
     <link rel="stylesheet" href="styles/index-desktop.css">
     <!--JAVASCRIPT-->
+    <script src="./scripts/index.js" defer></script>
 
     <title>Home page | HyperMarkup Mentor</title>
 </head>
 
 <body>
-    <main>
-        <header>
-            <picture>
-                <source media="(min-width: 1500px)" srcset="images/icon.png">
-                <source media="(max-width: 999px)" srcset="images/icon.png">
-                <img src="images/icon.png" alt="An icon image" width="40" height="30" loading="lazy">
-            </picture>
-            <nav>
+    <header>
+            <div class="header-logo">
+                <picture>
+                    <source media="(min-width: 1500px)" srcset="images/icon.svg">
+                    <source media="(max-width: 999px)" srcset="images/icon.svg">
+                    <img src="images/icon.svg" alt="An icon image">
+                </picture>
+                <button id="ham-Btn">☰</button>
+            </div>
+
+            <nav id="ham-nav">
                 <a href="#">Home</a>
                 <a href="tips.html">Tips</a>
                 <a href="resources.html">Resources</a>
                 <a href="about.html">About</a>
                 <a href="references.html">References</a>
             </nav>
-
-        </header>
+    </header>
+    
+    <main>
 
         <div class="hero">
             <h1>Welcome to my Webpage</h1>
@@ -44,19 +50,21 @@
             <picture>
                 <source media="(min-width: 1500px)" srcset="images/tech.webp">
                 <source media="(max-width: 999px)" srcset="images/tech.webp">
-                <img src="images/tech.webp" alt="A hero image" loading="lazy">
+                <img src="images/tech.webp" alt="A hero image">
             </picture>
+            <div class="cta">
+                <section>
+                    <p>Ready to level up your coding experience!</p>
+                    <div class="cta-btns">
+                        <a href="tips.html" class="cta-btn" id="tipsBtn">Tips</a>
+                        <a href="resources.html" class="cta-btn" id="resourcesBtn">View Resources</a>
+                    </div>
+
+                </section>
+            </div>
         </div>
 
-        <div class="cta">
-            <section>
-                <p>Ready to level up your coding experience</p>
-                <button class="cta" id="tipsBtn">Tips</button>
-                <button class="cta" id="resourcesBtn">View Resources</button>
-            </section>
-        </div>
-
-        <section>
+        <section class="featured-container">
             <h2>Featured posts</h2>
             <article>
                 <h3>How Contrast Issues Saved My Life</h3>
@@ -72,15 +80,17 @@
             </article>
         </section>
 
-        <section>
-            <h2>Tip of the day</h2> <!-- Uses Javascript -->
-            <p>Loading tip...<br><span id ="tipOfTheDay"></span></p>
+        <section class="section-tip">
+            <h2>Tip of the day:</h2> <!-- Uses Javascript -->
+            <p>Loading tip...<br><br><span id="tipOfTheDay"></span></p>
         </section>
     </main>
     <hr>
     <footer>
-        <p>&copy; <span id="currentYear"></span> | Kevin Mbemba Kiyindou | <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentYear"></span> | Kevin Mbemba Kiyindou | Last Modified: <span
+                id="lastModified"></span></p>
     </footer>
-    
+
 </body>
+
 </html>

@@ -46,10 +46,13 @@ Page load → get tasks, display all
 
 
 
-Primary	Electric Blue	#1E90FF	`Headings, nav bar, links, buttons`
-Secondary	Deep Navy	#135DA6	`Sub‑headings, hover states, section titles`
+Primary	Electric Blue	#0d47a1	`Headings, nav bar, links, buttons`
+Secondary	Deep Navy	#333333	`Sub‑headings, hover states, section titles`
 Accent	Vibrant Orange	#FF8C00	`Highlights, call‑to‑action buttons`
 Neutral Light	Soft Gray	#F5F5F5	`Page background, cards, sections`
 Neutral Dark	Charcoal Gray	#333333	`Body text, footer text`
 Border/Shadow	Light Gray	#E0E0E0	`Card borders, dividers`
 Success/Highlight	Fresh Green	#32CD32	`Positive feedback, success messages`
+BAckground color #333333
+
+links hover #1E90FF
