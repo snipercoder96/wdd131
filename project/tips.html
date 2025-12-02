@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Developer tips on CSS, flex boxes VS grid and so many more">
     <meta name="author" content="Kevin Mbemba Kiyindou">
-    
+
     <!-- Added Favicon for extra creativity -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="manifest" href="./images/site.webmanifest">
     <!-- CSS-->
+    <link rel="stylesheet" href="styles/tips-mobile.css">
+    <link rel="stylesheet" href="styles/tips-desktop.css">
     <!--JAVASCRIPT-->
-    
+    <script src="scripts/tips.js" defer></script>
+
     <title>Tips | HyperMarkup Mentor</title>
 </head>
-<body>
 
-    <main>
-        <header>
+<body>
+    <header>
+        <div class="header-logo">
             <picture>
-                <source media="(min-width: 1500px)" srcset="images/icon.png">
-                <source media="(max-width: 999px)" srcset="images/icon.png">
-                <img src="images/icon.png" alt="An icon image" width="40" height="30" loading="lazy">
+                <source media="(min-width: 1500px)" srcset="images/icon.svg">
+                <source media="(max-width: 999px)" srcset="images/icon.svg">
+                <img src="images/icon.svg" alt="An icon image">
             </picture>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="#">Tips</a>
-                <a href="resources.html">Resources</a>
-                <a href="about.html">About</a>
-                <a href="references.html">References</a>
-            </nav>
-        </header>
-        <div class="container">
+            <button id="ham-Btn">☰</button>
+        </div>
+        <nav id="ham-nav">
+            <a href="index.html">Home</a>
+            <a href="#">Tips</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="references.html">References</a>
+        </nav>
+    </header>
+    <main>
+
+        <div class="hero">
             <picture>
                 <source media="(min-width: 1500px)" srcset="images/employees.webp">
                 <source media="(max-width: 999px)" srcset="images/employees.webp">
-                <img src="images/employees.webp" alt="Employees discussing as a team" loading="lazy">
+                <img src="images/employees.webp" alt="Employees discussing as a team">
             </picture>
-            <h1>Developer Tips</h1>
-            <p>Practical advice to make your coding smoother and more efficient.</p>
         </div>
-        
-        
+
         <section id="tips-card">
             <article>
+                <h1>Developer Tips:</h1>
+                <p>Practical advice to make your coding smoother and more efficient.</p>
+            </article>
+            <article>
                 <h2>Use Semantic HTML</h2>
-                <p>Always choose the right elements for the job — it improves accessibility and SEO (Search Engine Optimization).</p>
+                <p>Always choose the right elements for the job — it improves accessibility and SEO (Search Engine
+                    Optimization).</p>
             </article>
             <article>
                 <h2>Flexbox vs Grid</h2>
@@ -63,9 +73,10 @@
             </article>
         </section>
 
-        <section>
+        <section id="tip-section">
             <h2>Tip of the day</h2> <!-- Uses Javascript -->
-            <p>Loading tip...<br><span id="tipOfTheDay"></span></p>
+            <p id="loading-tip">Loading tip...</p>
+            <p><span id="tipOfTheDay"></span></p>
         </section>
 
     </main>
@@ -73,7 +84,8 @@
     <footer>
         <p>&copy; <span id="currentYear"></span> | Kevin Mbemba Kiyindou | <span id="lastModified"></span></p>
     </footer>
-    
-    
+
+
 </body>
+
 </html>

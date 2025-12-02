@@ -1,0 +1,61 @@
+@media screen and (min-width: 1001px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        /*Ensures consistency, avoids breaking elements*/
+    }
+
+    body {
+        background-color: var(--body-color);
+    }
+
+    header {
+        background-color: var(--slightly-dark);
+        color: var(--white);
+        font-family: var(--font-heading);
+        padding: 20px;
+        margin: 0 0 30px;
+    }
+
+    header img {
+        width: 10%;
+        height: auto;
+    }
+
+    .image-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .image-container span {
+        flex: none;
+        font-size: 2rem;
+    }
+
+    h2 {
+        color: var(--font-color-heading-h2);
+        font-family: var(--font-heading);
+    }
+
+    #mentorForm-name #mentorForm-email #mentorForm-message {
+        color: var(--slightly-dark);
+    }
+
+    main {
+        background-color: var(--white);
+        padding: 30px;
+        border: 1px solid var(--slightly-dark);
+        border-radius: 8px;
+        box-shadow: 3px 3px 6px var(--slightly-dark);
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+
+
+}

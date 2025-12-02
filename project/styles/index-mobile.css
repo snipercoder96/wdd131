@@ -23,11 +23,15 @@
 }
 
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 1000px) {
 
-    *, *::before, *::after{
-        box-sizing: border-box; /*Ensures consistency, avoids breaking elements*/
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        /*Ensures consistency, avoids breaking elements*/
     }
+
     main {
         display: block;
         margin: 0 auto;
@@ -48,7 +52,7 @@
 
     .header-logo {
         display: flex;
-        justify-content: space-between;     
+        flex-direction: row;
         align-items: center;
     }
 
@@ -56,7 +60,7 @@
         display: none;
     }
 
-    #ham-Btn{
+    #ham-Btn {
         height: 20%;
         width: 10%;
         background-color: var(--green-color);
@@ -64,15 +68,17 @@
         box-sizing: border-box;
         border: 2px solid var(--card-shadow);
         border-radius: 4px;
+        font-family: var(--font-body);
 
     }
 
-    header > .header-logo img {
+    header>.header-logo img {
         width: 10%;
         height: 5%;
     }
 
-    header nav.active { /* Toggling in javascript */
+    header nav.active {
+        /* Toggling in javascript */
         display: flex;
         flex-direction: column;
         gap: 1em;
@@ -80,10 +86,10 @@
         width: 100%;
         padding: 1rem;
         color: var(--white);
-        transition: all 0.3s ease-in-out;     
+        transition: all 0.3s ease-in-out;
     }
 
-    header nav a:visited{ 
+    header nav a:visited {
         color: lightgreen;
     }
 
@@ -125,7 +131,7 @@
         height: auto;
         border-radius: 6px;
     }
-        
+
     .hero .cta {
         width: min(90%, 400px);
         display: flex;
@@ -143,12 +149,12 @@
         flex-direction: column;
     }
 
-    .cta p{
+    .cta p {
         font-size: 1.1rem;
         color: var(--darkgreen);
     }
 
-    .cta .cta-btn{
+    .cta .cta-btn {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -160,7 +166,7 @@
         gap: 1rem;
         box-sizing: border-box;
         background-color: var(--green-color);
-        border-radius: 8px ;
+        border-radius: 8px;
         border: 3px solid var(--silver-color);
         font-size: 1rem;
         font-family: var(--font-body);
@@ -169,7 +175,7 @@
     }
 
     /*------------SECTION-------------*/
-    .featured-container > article {
+    .featured-container>article {
         margin: 40px 0;
         background-color: var(--green-color-feint);
         padding: 30px 20px;
@@ -178,12 +184,12 @@
         box-shadow: 3px 3px 6px var(--slightly-dark);
     }
 
-    .featured-container > article > h3, 
-    .featured-container > article > p  {
+    .featured-container>article>h3,
+    .featured-container>article>p {
         color: var(--white);
     }
 
-    .featured-container > article > h3 {
+    .featured-container>article>h3 {
         text-decoration: underline;
     }
 
@@ -196,7 +202,7 @@
 
     }
 
-    main > .section-tip {
+    main>.section-tip {
         background-color: var(--white);
         border-radius: 8px;
         padding: 1.3rem;
@@ -207,7 +213,7 @@
 
     hr {
         color: var(--slightly-dark);
-    
+
     }
 
     /*------------- Footer -----------------*/
@@ -224,16 +230,16 @@
     }
 
     /*-----------TIP OF THE DAY ----------------*/
-    .section-tip #tipOfTheDay{
+    .section-tip #tipOfTheDay {
         color: var(--green-color);
         font-size: larger;
     }
 
-    #tipOfTheDay::before{
+    #tipOfTheDay::before {
         content: "⭐Tip: ";
     }
 
-    
+
 
 
 

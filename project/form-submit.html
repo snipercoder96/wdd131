@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information to localstorage hat shows what information the user saved.">
+    <meta name="author" content="Kevin Mbemba Kiyindou">
+
+    <!-- Added Favicon for extra creativity -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="styles/form-submit-mobile.css">
+    <link rel="stylesheet" href="styles/form-submit-desktop.css">
+    <!--JAVASCRIPT-->
+    <script src="scripts/form-submit.js" defer></script>
+    <title>Form Submit✓ | HyperMarkup Mentor</title>
+</head>
+
+<body>
+    <header>
+        <div class="image-container">
+            <picture>
+                <source media="(min-width: 1500px)" srcset="images/icon.svg">
+                <source media="(max-width: 999px)" srcset="images/icon.svg">
+                <img src="images/icon.svg" alt="An icon image">
+            </picture>
+            <span>Saved Form Information</span>
+        </div>
+    </header>
+
+    <main>
+        <h2>Name: </h2><span id="mentorForm-name"></span><br>
+        <h2>Email: </h2><span id="mentorForm-email"></span><br>
+        <h2>Message: </h2><span id="mentorForm-message"></span>
+    </main>
+
+</body>
+
+</html>

@@ -1,72 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is an About Me webpage that describes the creator and his accomplishment">
     <meta name="author" content="Kevin Mbemba Kiyindou">
-    
+
     <!-- Added Favicon for extra creativity -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="manifest" href="./images/site.webmanifest">
     <!-- CSS-->
+    <link rel="stylesheet" href="styles/about-mobile.css">
+    <link rel="stylesheet" href="styles/about-desktop.css">
     <!--JAVASCRIPT-->
+    <script src="scripts/about.js" defer></script>
 
     <title>About Me | HyperMarkup Mentor</title>
-    
+
 </head>
+
 <body>
-    <main>
-        <header>
+    <header>
+        <div class="header-logo">
             <picture>
-                <source media="(min-width: 1500px)" srcset="images/icon.png">
-                <source media="(max-width: 999px)" srcset="images/icon.png">
-                <img src="images/icon.png" alt="An icon image" width="40" height="30" loading="lazy">
+                <source media="(min-width: 1500px)" srcset="images/icon.svg">
+                <source media="(max-width: 999px)" srcset="images/icon.svg">
+                <img src="images/icon.svg" alt="An icon image">
             </picture>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="tips.html">Tips</a>
-                <a href="resources.html">Resources</a>
-                <a href="#">About</a>
-                <a href="references.html">References</a>
-            </nav>
+            <button id="ham-Btn">☰</button>
+        </div>
+        <nav id="ham-nav">
+            <a href="index.html">Home</a>
+            <a href="tips.html">Tips</a>
+            <a href="resources.html">Resources</a>
+            <a href="#">About</a>
+            <a href="references.html">References</a>
+        </nav>
+    </header>
+    <main>
+        <section>
             <h1>About HyperMarkup Mentor</h1>
-            <p>HyperMarkup Mentor is a learning webpage designed to help beginner developers master the fundamentals of HTML, CSS, and
+            <p>HyperMarkup Mentor is a learning webpage designed to help beginner developers master the fundamentals of
+                HTML, CSS, and
                 JavaScript.
-                Through practical tips, clear examples, and interactive exercises, this site makes web development fun and exciting.</p>
-            
+                Through practical tips, clear examples, and interactive exercises, this site makes web development fun
+                and exciting.</p>
+
             <p>Created by Kevin Mbemba Kiyindou, HyperMarkup Mentor reflects my journey as a developer.
-                I built this project to share what I’ve learned, highlight common pitfalls and gotchas, and provide resources that make coding
+                I built this project to share what I’ve learned, highlight common pitfalls and gotchas, and provide
+                resources that make coding
                 smoother for beginners and intermediate learners alike.</p>
-            
-            <p>Whether you’re just starting out or refining your skills, HyperMarkup Mentor is here to guide you step by step,
+
+            <p>Whether you’re just starting out or refining your skills, HyperMarkup Mentor is here to guide you step by
+                step,
                 with a focus on accessibility, clean design, and maintainable code.</p>
-        </header>
+        </section>
 
         <section>
             <h2>Our Mission</h2>
             <p>Helping developers learn HTML, CSS, and JavaScript through practical tips and interactive examples.</p>
         </section>
-    
+
         <section>
             <h2>Meet the Creator</h2>
             <picture>
-                <source media="(min-width: 1500px)" srcset="images/Kevin.jpg">
-                <source media="(max-width: 999px)" srcset="images/Kevin.jpg">
-                <img src="images/Kevin.jpg" alt="An image of myself" loading="lazy">
+                <source media="(min-width: 1500px)" srcset="images/Kevin.webp">
+                <source media="(max-width: 999px)" srcset="images/Kevin.webp">
+                <img src="images/Kevin.webp" alt="An image of myself" loading="lazy">
             </picture>
             <p>Hi, I’m Kevin Mbemba Kiyindou. This site is part of my journey in web development.</p>
-            <p>When i started my journey coding in HTML, CSS and JavaScript, it was challenging especially for CSS and Javascript.
-                Through practicing and revisiting some documentations, and the use of AI for asking questions why this is like this and so on, 
+            <p>When i started my journey coding in HTML, CSS and JavaScript, it was challenging especially for CSS and
+                Javascript.
+                Through practicing and revisiting some documentations, and the use of AI for asking questions why this
+                is like this and so on,
                 I was able to understand concepts better and eventually found a break through.
             </p>
-            </section>
+        </section>
+        <section>
+            <h2>Contact Me</h2>
+            <form action="form-submit.html" method="get" id="mentor-form"> <!-- Github -->
+
+                <label for="name">Name<span>*</span>:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email<span>*</span>:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message<span>*</span>:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Send Message" id="submit-btn">
+            </form>
+        </section>
     </main>
     <hr>
     <footer>
-        <p>&copy; <span id="currentYear"></span> | Kevin Mbemba Kiyindou | <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentYear"></span> | Kevin Mbemba Kiyindou | Last Modified: <span
+                id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>

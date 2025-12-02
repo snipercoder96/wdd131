@@ -1,0 +1,91 @@
+@media screen and (min-width: 1001px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        /*Ensures consistency, avoids breaking elements*/
+    }
+
+    main {
+        display: block;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 1rem;
+    }
+
+    body {
+        background-color: var(--body-color);
+    }
+
+    /*-------------------HEADER----------------------*/
+
+    header {
+        padding: 30px;
+        margin: 0;
+        background-color: var(--slightly-dark);
+        max-width: none;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .header-logo img {
+        width: 7%;
+        justify-content: flex-start;
+    }
+
+    #ham-Btn {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 20px 0 0;
+        gap: 3rem;
+    }
+
+    header nav a {
+        color: var(--white);
+    }
+
+    header nav a:visited {
+        color: var(--light-green);
+    }
+
+    header nav a:hover {
+        text-decoration: none;
+        color: var(--green-color);
+        transition: all ease-in-out 0.3s;
+    }
+
+    h1 {
+        color: var(--font-color-heading-h1);
+        font-family: var(--font-heading);
+        margin: 30px 0;
+        font-size: 4rem;
+    }
+
+
+    h2 {
+        font-family: var(--font-heading);
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--slightly-dark);
+        color: var(--white);
+        border-radius: 8px;
+    }
+
+    footer hr {
+        border: 1px solid var(--white);
+        grid-column: 1 /-1;
+        margin: 1rem 2rem;
+    }
+}

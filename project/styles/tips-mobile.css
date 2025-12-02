@@ -1,0 +1,198 @@
+:root {
+    --font-heading: 'Roboto Condensed', sans-serif;
+    --font-body: 'Source Sans 3', sans-serif;
+
+    --font-color-heading-h1: #0d47a1;
+    --font-color-heading-h2: #003366;
+    --font-color-h3: #060260;
+    --slightly-dark: #333333;
+    --light-green: rgb(0, 255, 0);
+    --green-color: rgb(4, 88, 4);
+    --green-color-feint: rgba(7, 57, 7, 0.845);
+    --darkgreen: rgb(3, 48, 3);
+    --black-col: #000;
+    --silver-color: #A9A9A9;
+
+    /*Body*/
+    --body-color: #F5F5F5;
+
+    /*card and links */
+    --white: #ffffff;
+    --card-border: #e0e0e0b5;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        /*Ensures consistency, avoids breaking elements*/
+    }
+
+    /*-------------------------MAIN------------------*/
+    main {
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    /*----------------HEADER----------------*/
+    header {
+        background-color: var(--slightly-dark);
+        padding: 20px;
+        width: 100%;
+    }
+
+    .header-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    body {
+        background-color: var(--body-color);
+    }
+
+    header>.header-logo picture img {
+        width: 10%;
+        height: 5%;
+    }
+
+    /*-------------------------LINKS------------------------*/
+
+    header nav {
+        display: none;
+    }
+
+    #ham-Btn {
+        height: 20%;
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: var(--green-color);
+        border: 2px solid var(--card-shadow);
+        border-radius: 4px;
+        cursor: pointer;
+        color: var(--body-color);
+    }
+
+    #ham-nav.open {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        background-color: var(--slightly-dark);
+        width: 100%;
+        padding: 1rem;
+        color: var(--white);
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    header nav a:visited {
+        color: lightgreen;
+    }
+
+    /*------------------------HERO IMG----------------------*/
+
+    .hero img {
+        width: 100%;
+        max-width: 1000px;
+        box-sizing: border-box;
+        aspect-ratio: 16 /9;
+        overflow: hidden;
+        /*Avoids CLS (Cumulative layout shifting*/
+    }
+
+    /*-------------------------------H1-H3---------------------*/
+    h1 {
+        text-align: center;
+        color: var(--font-color-heading-h1);
+        font-family: var(--font-heading);
+        font-size: 3rem;
+    }
+
+    h2 {
+        text-align: center;
+        color: var(--font-color-heading-h2);
+        font-family: var(--font-heading);
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        text-align: center;
+        color: var(--font-color-h3);
+        font-size: 1.35rem;
+    }
+
+    p {
+        color: var(--slightly-dark);
+        font-family: var(--font-body);
+    }
+
+    /*---------------TIPS card----------------*/
+    #tips-card {
+        background-color: var(--white);
+        padding: 20px;
+        border: 3px solid var(--card-border);
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+
+    #tips-card article {
+        background-color: var(--green-color-feint);
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 3px 3px 6px var(--slightly-dark);
+        border: 3px solid var(--slightly-dark);
+
+    }
+
+    #tips-card article:nth-of-type(1) {
+        background-color: var(--white);
+        box-shadow: none;
+        border: none;
+    }
+
+    #tips-card article:nth-of-type(1) p {
+        color: var(--slightly-dark);
+    }
+
+    #tips-card article h2,
+    #tips-card article p {
+        color: var(--white);
+    }
+
+    #tip-section {
+        background-color: var(--white);
+        padding: 20px;
+        border: 3px solid var(--slightly-dark);
+        border-radius: 8px;
+        box-shadow: 3px 3px 6px var(--slightly-dark);
+    }
+
+    #tip-section #tipOfTheDay::before {
+        content: "⭐ Tip: ";
+        color: var(--black-col);
+    }
+
+    #tip-section #tipOfTheDay {
+        font-size: 1.2rem;
+        color: var(--green-color);
+    }
+
+    /*------------------------Footer------------------------*/
+    footer {
+        background-color: var(--slightly-dark);
+        padding: 30px;
+    }
+
+    footer p {
+        color: var(--white);
+        text-align: center;
+    }
+
+}

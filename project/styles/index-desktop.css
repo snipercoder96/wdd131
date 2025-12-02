@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1001px) {
 
     *,
     *::before,
@@ -19,7 +19,8 @@
     }
 
     /*-------------------FEATURED AND SECTION FIX--------------*/
-    .featured-container, .section-tip{
+    .featured-container,
+    .section-tip {
         width: 100%;
         max-width: none;
     }
@@ -76,7 +77,7 @@
         text-align: center;
         color: var(--font-color-heading-h1);
         font-family: var(--font-heading);
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     h2 {
@@ -104,7 +105,7 @@
         box-sizing: border-box;
     }
 
-    .hero> picture > img {
+    .hero>picture>img {
         display: block;
         max-width: 100%;
         height: auto;
@@ -165,7 +166,7 @@
 
 
     /*------------SECTION-------------*/
-    .featured-container{
+    .featured-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
@@ -178,12 +179,13 @@
 
     }
 
-    .featured-container > h2{
-        grid-column: 1 / -1; /*Forces it out of the grid */ 
+    .featured-container>h2 {
+        grid-column: 1 / -1;
+        /*Forces it out of the grid */
 
     }
 
-    .featured-container > article {
+    .featured-container>article {
         background-color: var(--darkgreen);
         padding: 40px;
         margin: 25px;
@@ -193,13 +195,13 @@
         max-width: 500px;
     }
 
-    .featured-container > article > h3 {
+    .featured-container>article>h3 {
         color: var(--white);
         font-family: var(--font-heading);
         text-decoration: underline;
     }
 
-    .featured-container > article > p {
+    .featured-container>article>p {
         color: var(--white);
         font-family: var(--font-heading);
     }
@@ -219,7 +221,7 @@
 
     /*-----------TIP OF THE DAY ----------------*/
 
-    .section-tip{
+    .section-tip {
         background-color: var(--white);
         padding: 20px;
         border-radius: 8px;
@@ -227,6 +229,7 @@
         box-shadow: 3px 3px 6px var(--slightly-dark);
         margin: 30px 0;
     }
+
     .section-tip #tipOfTheDay {
         color: var(--green-color);
         font-size: larger;

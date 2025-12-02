@@ -1,0 +1,174 @@
+@media screen and (min-width: 1001px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        /*Ensures consistency, avoids breaking elements*/
+    }
+
+    /*-------------------------MAIN------------------*/
+    main {
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    /*----------------HEADER----------------*/
+    header {
+        padding: 30px;
+        margin: 0;
+        background-color: var(--slightly-dark);
+        max-width: none;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    body {
+        background-color: var(--body-color);
+    }
+
+    .header-logo img {
+        width: 7%;
+        justify-content: flex-start;
+    }
+
+    #ham-Btn {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 20px 0 0;
+        gap: 3rem;
+    }
+
+    header>nav a {
+        color: var(--white);
+    }
+
+    header>nav a:visited {
+        color: var(--light-green);
+    }
+
+    header>nav a:hover {
+        color: var(--green-color);
+        text-decoration: none;
+        transition: all ease-in-out 0.3s;
+    }
+
+    /*------------------------HERO IMG----------------------*/
+
+    .hero img {
+        width: 100%;
+        max-width: 2000px;
+        box-sizing: border-box;
+        aspect-ratio: 16 /9;
+        /*Avoids CLS (Cumulative layout shifting*/
+    }
+
+    /*-------------------------------H1-H3---------------------*/
+    h1 {
+        text-align: center;
+        color: var(--font-color-heading-h1);
+        font-family: var(--font-heading);
+        font-size: 4rem;
+    }
+
+    h2 {
+        text-align: center;
+        color: var(--font-color-heading-h2);
+        font-family: var(--font-heading);
+        font-size: 3rem;
+    }
+
+    h3 {
+        text-align: center;
+        color: var(--font-color-h3);
+        font-size: 2rem;
+    }
+
+    p {
+        color: var(--slightly-dark);
+        font-family: var(--font-body);
+        font-size: 1rem;
+    }
+
+    /*-----------------------TIPS CARD---------------------------------*/
+    #tips-card {
+        background-color: var(--white);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        margin: 30px 30px;
+        gap: 2rem;
+    }
+
+    #tips-card article:nth-of-type(1){
+        grid-column: 1 / -1;
+        background-color: var(--white);
+        border: none;
+    }
+
+    #tips-card article:nth-of-type(1) p{
+        color: var(--slightly-dark);
+    }
+
+    #tips-card article > p{
+        text-align: center;
+    }
+
+    #tips-card article{
+        background-color: var(--darkgreen);
+        border: 3px solid var(--slightly-dark);
+        border-radius: 8px;
+        padding: 1rem;
+    }
+    #tips-card article h2,
+    #tips-card article p{
+        color: var(--white);
+    }
+
+    #tip-section {
+        background-color: var(--white);
+        padding: 20px;
+        border: 3px solid var(--slightly-dark);
+        border-radius: 8px;
+        box-shadow: 3px 3px 6px var(--slightly-dark);
+    }
+
+    #tip-section #tipOfTheDay::before {
+        content: "⭐ Tip: ";
+        color: var(--black-col);
+    }
+
+    #tip-section #tipOfTheDay {
+        font-size: 1.2rem;
+        color: var(--green-color);
+        min-height: 2.5rem;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    /*------------------------Footer------------------------*/
+    footer {
+        margin: 20px 0 0 0;
+        background-color: var(--slightly-dark);
+        padding: 30px;
+    }
+
+    footer p {
+        color: var(--white);
+        text-align: center;
+    }
+
+}

@@ -11,17 +11,26 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/resources-mobile.css">
+    <link rel="stylesheet" href="styles/resources-desktop.css">
+    <!--JAVASCRIPT-->
+    <script src="scripts/resources.js" defer></script>
     
     <title>Resources | HyperMarkup Mentor</title>
 </head>
 <body>
     <header>
-        <picture>
-            <source media="(min-width: 1500px)" srcset="images/icon.png">
-            <source media="(max-width: 999px)" srcset="images/icon.png">
-            <img src="images/icon.png" alt="An icon image" width="40" height="30" loading="lazy">
-        </picture>
-        <nav>
+        <div class="header-logo">
+            <picture>
+                <source media="(min-width: 1500px)" srcset="images/icon.svg">
+                <source media="(max-width: 999px)" srcset="images/icon.svg">
+                <img src="images/icon.svg" alt="An icon image">
+            </picture>
+            <button id="ham-Btn">☰</button>
+        </div>
+        <nav id="ham-nav">
             <a href="index.html">Home</a>
             <a href="tips.html">Tips</a>
             <a href="#">Resources</a>

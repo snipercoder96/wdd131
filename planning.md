@@ -56,3 +56,46 @@ Success/Highlight	Fresh Green	#32CD32	`Positive feedback, success messages`
 BAckground color #333333
 
 links hover #1E90FF
+
+🗂 Page-by-Page Strategy
+index.html
+
+Acts as your landing page.
+
+Include a clear navigation bar linking to all other pages.
+
+Make it visually appealing and responsive (mobile-first layout).
+
+tips.html
+
+Perfect spot for your Tip of the Day feature.
+
+Use JavaScript arrays + methods to rotate tips.
+
+Store user-submitted tips in localStorage via a form.
+
+Display tips dynamically with template literals.
+
+resources.html
+
+Curate links, diagrams, or cheat sheets.
+
+Use lazy-loaded images for accessibility and performance.
+
+Could include a small interactive element (like filtering resources by category).
+
+references.html
+
+Required by the assignment.
+
+List all sources for images, text, or inspiration.
+
+Keep it simple — no styling needed.
+
+about.html
+
+Share the purpose of your site and your role as “HTMLMARKUP Mentor.”
+
+Add a contact form here (or on index) that saves entries to localStorage.
+
+This form checks off the form requirement and ties into your JavaScript logic.

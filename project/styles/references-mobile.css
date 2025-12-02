@@ -30,6 +30,7 @@
         box-sizing: border-box;
         /*Ensures consistency, avoids breaking elements*/
     }
+
     main {
         display: block;
         margin: 0 auto;
@@ -67,8 +68,13 @@
         border: 2px solid var(--card-shadow);
         border-radius: 4px;
         font-family: var(--font-body);
-
     }
+
+    hr {
+        border: 1px solid var(--slightly-dark);
+        margin: 0 0 20px;
+    }
+
     header>.header-logo img {
         width: 10%;
         height: 5%;
@@ -90,54 +96,31 @@
         color: lightgreen;
     }
 
-    /*-----------DIV : HERO---------------*/
-    h1 {
-        color: var(--font-color-heading-h1);
+    /*------------------footer----------------------*/
+
+    h1{
         font-family: var(--font-heading);
-        font-size: 3rem;
+        color: var(--font-color-heading-h1);
     }
 
     h2 {
-        color: var(--font-color-heading-h2);
         font-family: var(--font-heading);
-        font-size: 1.8rem;
     }
 
-    h3 {
-        text-align: center;
-        color: var(--font-color-h3);
-        font-size: 1.35rem;
-    }
-
-    p, ul {
-        color: var(--slightly-dark);
+    li{
         font-family: var(--font-body);
     }
 
-    p:nth-of-type(1){
-        font-size: 1.3rem;
-    }
-
-    section{
+    footer{
         display: flex;
         flex-direction: column;
-        background-color: var(--white);
-        padding: 20px;
-        margin: 30px 0;
-        border: 3px solid var(--slightly-dark);
-        border-radius: 8px;
-        box-shadow: 3px 3px 6px var(--slightly-dark);
-    }
-
-    /*-----------FOOTER-------------*/
-    footer {
         background-color: var(--slightly-dark);
-        padding: 30px;
-
+        color:  var(--white);
+        border-radius: 8px;
     }
 
-    footer p{
-        color: var(--white);
-        text-align: center;
+    footer hr{
+        border: 1px solid var(--white);
+        margin: 0 10px;
     }
 }
