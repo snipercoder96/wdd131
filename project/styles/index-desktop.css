@@ -257,7 +257,7 @@
         content: "⭐Tip for the day: ";
     }
 
-    #dateOfTip{
+    #dateOfTip {
         color: var(--red-color-time);
     }
 

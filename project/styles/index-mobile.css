@@ -12,7 +12,7 @@
     --darkgreen: rgb(3, 48, 3);
     --black-col: #000;
     --silver-color: #A9A9A9;
-    --red-color-time: rgb(255, 0, 0);
+    --red-color-time: rgb(162, 9, 9);
 
     /*Body*/
     --body-color: #F5F5F5;
@@ -73,7 +73,7 @@
         transition: transform 1s ease-in-out;
     }
 
-    #ham-Btn.spin{
+    #ham-Btn.spin {
         transform: rotate(360deg);
     }
 
@@ -90,8 +90,11 @@
         background-color: var(--slightly-dark);
         width: 100%;
         padding: 1rem;
-        color: var(--white);
         transition: all 0.3s ease-in-out;
+    }
+
+    header nav a {
+        color: var(--white);
     }
 
     header nav a:visited {

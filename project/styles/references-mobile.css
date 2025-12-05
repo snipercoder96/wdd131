@@ -51,6 +51,10 @@
         padding: 20px;
     }
 
+    header nav a {
+        color: var(--white);
+    }
+
     .header-logo {
         display: flex;
         flex-direction: row;
