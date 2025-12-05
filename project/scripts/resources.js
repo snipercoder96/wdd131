@@ -7,8 +7,10 @@ button.addEventListener("click", () => {
 
     if (navigation.classList.contains("active")) {
         button.textContent = "X";
+        button.classList.add("spin");
     } else {
         button.textContent = "☰";
+        button.classList.remove("spin");
     }
 });
 
@@ -18,4 +20,4 @@ const currentYear = document.getElementById("currentYear");
 const lastModified = document.getElementById("lastModified");
 
 currentYear.textContent = new Date().getFullYear();
-lastModified.textContent = new Date().toLocaleString();
+lastModified.textContent = `Last Modified: ${new Date().toLocaleString()}`;

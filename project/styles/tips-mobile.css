@@ -12,6 +12,7 @@
     --darkgreen: rgb(3, 48, 3);
     --black-col: #000;
     --silver-color: #A9A9A9;
+    --red-color-time: red;
 
     /*Body*/
     --body-color: #F5F5F5;
@@ -77,6 +78,10 @@
         border-radius: 4px;
         cursor: pointer;
         color: var(--body-color);
+        transition: transform 1s ease-in-out;
+    }
+    #ham-Btn.spin {
+        transform: rotate(360deg);
     }
 
     #ham-nav.open {
@@ -175,8 +180,8 @@
     }
 
     #tip-section #tipOfTheDay::before {
-        content: "⭐ Tip: ";
-        color: var(--black-col);
+        content: "⭐ Tip for the day: ";
+        color: var(--green-color);
     }
 
     #tip-section #tipOfTheDay {
@@ -193,6 +198,10 @@
     footer p {
         color: var(--white);
         text-align: center;
+    }
+
+    #loading-tip {
+        color: var(--red-color-time);
     }
 
 }

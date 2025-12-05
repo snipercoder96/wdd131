@@ -98,6 +98,21 @@
         border: 2px solid var(--slightly-dark);
         border-radius: 6px;
         box-shadow: 3px 3px 3px var(--slightly-dark);
+        animation: 5s ease-in-out 0.5s fade-in;
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 
     section:nth-of-type(4) {

@@ -7,16 +7,21 @@ button.addEventListener("click", () => {
 
     if (navigation.classList.contains("active")) {
         button.textContent = "X";
+        button.classList.add("spin");
     } else {
         button.textContent = "☰";
+        button.classList.remove("spin");
     }
 });
 
 
 /*------------------------------- DATE -------------------- */
-document.getElementById("currentYear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = new Date().toLocaleString();
+function footerDate() {
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = `Last Modified: ${new Date().toLocaleString()}`;
+}
 
+footerDate();
 
 /*-----------------FORM------------------------------------ */
 

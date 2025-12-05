@@ -30,7 +30,7 @@
                 <source media="(max-width: 999px)" srcset="images/icon.svg">
                 <img src="images/icon.svg" alt="An icon image">
             </picture>
-            <button id="ham-Btn">☰</button>
+            <button id="ham-Btn" aria-label="Toggle-navigation">☰</button>
         </div>
 
         <nav id="ham-nav">
@@ -78,16 +78,20 @@
                 <h3>Flex vs Grid: When to Use What</h3>
                 <p>A practical guide to choosing the right layout system for different design challenges.</p>
             </article>
+            <article>
+                <h3>My take on Web Development</h3>
+                <p>This journey is going to be rough, but have your faith on the Lord.</p>
+            </article>
         </section>
 
         <section class="section-tip">
             <h2>Tip of the day:</h2> <!-- Uses Javascript -->
-            <p>Loading tip...<br><br><span id="tipOfTheDay"></span></p>
+            <p id="tipOfTheDayPara"><span id="dateOfTip"></span><br><br><span id="tipOfTheDay"></span></p>
         </section>
     </main>
     <hr>
     <footer>
-        <p>&copy; <span id="currentYear"></span> | Kevin Mbemba Kiyindou | Last Modified: <span
+        <p>&copy; <span id="currentYear"></span> | Kevin Mbemba Kiyindou | <span
                 id="lastModified"></span></p>
     </footer>
 

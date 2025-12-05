@@ -12,3 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
         message.textContent = userInfo.message;
     }
 }); 
+
+// get time saved
+
+document.getElementById("time-saved").textContent = `Time saved in: ${new Date()}`;

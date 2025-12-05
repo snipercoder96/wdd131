@@ -20,16 +20,21 @@
     --white: #ffffff;
     --card-border: #e0e0e0b5;
     --card-shadow: rgba(0, 0, 0, 0.1);
+    --purple-links-desktop: purple;
+    --light-blue-link: rgb(0, 255, 234);
+
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
+
     *,
     *::before,
     *::after {
         box-sizing: border-box;
         /*Ensures consistency, avoids breaking elements*/
     }
+
     main {
         display: block;
         margin: 0 auto;
@@ -67,8 +72,14 @@
         border: 2px solid var(--card-shadow);
         border-radius: 4px;
         font-family: var(--font-body);
+        transition: transform 1s ease-in-out;
 
     }
+
+    #ham-Btn.spin {
+        transform: rotate(360deg);
+    }
+
     header>.header-logo img {
         width: 10%;
         height: 5%;
@@ -109,16 +120,17 @@
         font-size: 1.35rem;
     }
 
-    p, ul {
+    p,
+    ul {
         color: var(--slightly-dark);
         font-family: var(--font-body);
     }
 
-    p:nth-of-type(1){
+    p:nth-of-type(1) {
         font-size: 1.3rem;
     }
 
-    section{
+    section {
         display: flex;
         flex-direction: column;
         background-color: var(--white);
@@ -136,7 +148,7 @@
 
     }
 
-    footer p{
+    footer p {
         color: var(--white);
         text-align: center;
     }

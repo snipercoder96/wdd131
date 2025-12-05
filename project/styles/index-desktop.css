@@ -144,6 +144,11 @@
         border-radius: 6px;
         text-decoration: none;
         font-family: var(--font-body);
+        transition: transform 1s ease-in-out;
+    }
+
+    .cta-btn.spin {
+        transform: rotate(360deg);
     }
 
     .cta-btns {
@@ -160,7 +165,6 @@
     .cta .cta-btn:hover {
         background-color: var(--light-green);
         color: var(--slightly-dark);
-        transition: all ease-in-out 0.4s;
     }
 
 
@@ -193,7 +197,14 @@
         border-radius: 8px;
         box-shadow: 3px 3px 6px var(--slightly-dark);
         max-width: 500px;
+        transition: transform 0.6s ease-in-out;
+
     }
+
+    .featured-container>article:hover {
+        transform: scale(1.05) rotate(-2deg);
+    }
+
 
     .featured-container>article>h3 {
         color: var(--white);
@@ -228,7 +239,14 @@
         border: 3px solid var(--card-border);
         box-shadow: 3px 3px 6px var(--slightly-dark);
         margin: 30px 0;
+        transition: transform 0.6s ease-in-out;
+
     }
+
+    .section-tip:hover {
+        transform: scale(1.05);
+    }
+
 
     .section-tip #tipOfTheDay {
         color: var(--green-color);
@@ -236,8 +254,13 @@
     }
 
     #tipOfTheDay::before {
-        content: "⭐Tip: ";
+        content: "⭐Tip for the day: ";
     }
+
+    #dateOfTip{
+        color: var(--red-color-time);
+    }
+
 
 
 

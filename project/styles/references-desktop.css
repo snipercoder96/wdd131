@@ -63,6 +63,14 @@
         transition: all ease-in-out 0.3s;
     }
 
+    footer a{
+        color: var(--white);
+    }
+
+    footer a:visited{
+        color: var(--light-green);
+    }
+
     h1 {
         color: var(--font-color-heading-h1);
         font-family: var(--font-heading);
@@ -75,12 +83,18 @@
         font-family: var(--font-heading);
     }
 
+    p, ul {
+        font-family: var(--font-body);
+    }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color: var(--slightly-dark);
         color: var(--white);
         border-radius: 8px;
+        gap: 1rem;
+        padding: 10px;
     }
 
     footer hr {
@@ -88,4 +102,18 @@
         grid-column: 1 /-1;
         margin: 1rem 2rem;
     }
+    footer p:nth-last-child(1){
+        text-align: center;
+        grid-column: 1/-1;
+    }
+
+    footer p:nth-last-child(2){
+        grid-column: 1/-1;
+    }
+
+    footer p:nth-last-child(2) img{
+        width: 10%;
+    }
+    
+
 }

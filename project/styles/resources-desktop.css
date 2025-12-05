@@ -111,6 +111,14 @@
         box-shadow: 3px 3px 6px var(--slightly-dark);
     }
 
+    section a:hover{
+        color: var(--light-blue-link);
+    }
+
+    section a:visited{
+        color: var(--purple-links-desktop);
+    }
+
     /*-----------------------FOOTER------------------*/
     footer {
         margin: 20px 0 0 0;
@@ -121,5 +129,6 @@
     footer p {
         color: var(--white);
         text-align: center;
+        
     }
 }

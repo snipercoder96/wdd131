@@ -112,30 +112,34 @@
         padding: 2rem;
         margin: 30px 30px;
         gap: 2rem;
+        border: 3px solid var(--card-border);
+        border-radius: 6px;
     }
 
-    #tips-card article:nth-of-type(1){
+    #tips-card article:nth-of-type(1) {
         grid-column: 1 / -1;
         background-color: var(--white);
         border: none;
     }
 
-    #tips-card article:nth-of-type(1) p{
+    #tips-card article:nth-of-type(1) p {
         color: var(--slightly-dark);
     }
 
-    #tips-card article > p{
+    #tips-card article>p {
         text-align: center;
     }
 
-    #tips-card article{
+    #tips-card article {
         background-color: var(--darkgreen);
         border: 3px solid var(--slightly-dark);
         border-radius: 8px;
         padding: 1rem;
     }
+
+
     #tips-card article h2,
-    #tips-card article p{
+    #tips-card article p {
         color: var(--white);
     }
 
@@ -145,19 +149,47 @@
         border: 3px solid var(--slightly-dark);
         border-radius: 8px;
         box-shadow: 3px 3px 6px var(--slightly-dark);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    #tip-section:hover {
+        transform: scale(1.05);
+
+    }
+
+    #tips-card article:nth-of-type(2),
+    #tips-card article:nth-of-type(3),
+    #tips-card article:nth-of-type(4),
+    #tips-card article:nth-of-type(5),
+    #tips-card article:nth-of-type(6),
+    #tips-card article:nth-of-type(7),
+    #tips-card article:nth-of-type(8),
+    #tips-card article:nth-of-type(9) {
+        transition: transform 1s ease-in-out;
+    }
+
+    #tips-card article:nth-of-type(2):hover,
+    #tips-card article:nth-of-type(3):hover,
+    #tips-card article:nth-of-type(4):hover,
+    #tips-card article:nth-of-type(5):hover,
+    #tips-card article:nth-of-type(6):hover,
+    #tips-card article:nth-of-type(7):hover,
+    #tips-card article:nth-of-type(8):hover,
+    #tips-card article:nth-of-type(9):hover {
+        transform: scale(1.05) rotate(-3deg);
     }
 
     #tip-section #tipOfTheDay::before {
-        content: "⭐ Tip: ";
-        color: var(--black-col);
+        content: "⭐ Tip for the day: ";
+        color: var(--green-color);
     }
 
     #tip-section #tipOfTheDay {
         font-size: 1.2rem;
         color: var(--green-color);
         min-height: 2.5rem;
-        transition: opacity 0.5s ease-in-out;
     }
+
 
     /*------------------------Footer------------------------*/
     footer {
@@ -171,4 +203,8 @@
         text-align: center;
     }
 
-}
+    #loading-tip{
+        color: var(--red-color-time);
+    }
+
+}   
