@@ -96,7 +96,7 @@
     p {
         color: var(--slightly-dark);
         font-family: var(--font-body);
-        font-size: 1.5;
+        font-size: 1.5rem;
     }
 
     .hero {
