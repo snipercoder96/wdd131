@@ -97,7 +97,7 @@
         font-size: 1.3rem;
     }
 
-    p:nth-of-type(1) {
+    main p:first-of-type {
         font-size: 1.3rem;
     }
 
@@ -129,6 +129,6 @@
     footer p {
         color: var(--white);
         text-align: center;
-        
+        font-size: 1rem;
     }
 }
